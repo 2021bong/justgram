@@ -19,7 +19,7 @@
 
   <body>
     <header class="header">
-      <h2 class="title">justgram</h2>
+      <a href="#"><h2 class="title">justgram</h2></a>
       <div class="search">
         <div class="search-content">
           <img src="./img/search_icon.png" alt="검색 아이콘" />
@@ -164,11 +164,15 @@
           </div>
         </div>
         <div class="post-com flex-vertical">
-          <div class="comment-input flex-vertical">
-            <div class="smile-icon"></div>
-            <input type="text" placeholder="댓글 달기..." />
-          </div>
-          <button class="comment-btn" disabled>게시</button>
+          <div class="smile-icon"></div>
+          <form class="comment-form flex-vertical">
+            <input
+              class="comment-input"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+            <button type="submit" class="comment-btn" disabled>게시</button>
+          </form>
         </div>
       </section>
 
@@ -248,15 +252,106 @@
           </div>
         </div>
         <div class="post-com flex-vertical">
-          <div class="comment-input flex-vertical">
-            <div class="smile-icon"></div>
-            <input type="text" placeholder="댓글 달기..." />
+          <div class="smile-icon"></div>
+          <form class="comment-form flex-vertical">
+            <input
+              class="comment-input"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+            <button type="submit" class="comment-btn" disabled>게시</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="post">
+        <div class="post-id flex-vertical">
+          <div class="flex-vertical">
+            <a href="#">
+              <div class="profile-cur"></div>
+            </a>
+            <a href="#">
+              <span class="bold">2021bong</span>
+            </a>
           </div>
-          <button class="comment-btn" disabled>게시</button>
+          <a href="#">
+            <img
+              class="post-id-more"
+              src="./img/option.png"
+              alt="더보기 아이콘"
+            />
+          </a>
+        </div>
+        <div class="post-cont">
+          <div class="post-img">
+            <img src="./img/board_img.png" alt="게시글 이미지" />
+          </div>
+          <div class="post-img-tools">
+            <ul class="flex-vertical">
+              <div class="img-tools-group flex-vertical">
+                <li>
+                  <a href="#">
+                    <img
+                      class="icon-setting"
+                      alt="좋아요"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="icon-setting" alt="댓글" src="./img/chat.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      class="icon-setting"
+                      alt="공유"
+                      src="./img/message_icon.png"
+                    />
+                  </a>
+                </li>
+              </div>
+              <li>
+                <a href="#">
+                  <img
+                    class="icon-setting"
+                    alt="저장"
+                    src="./img/bookmark.png"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="post-act">
+          <div class="post-act-container">
+            <p class="bold">좋아요 56,782개</p>
+            <p>
+              <span class="bold mr5">2021Bong</span>공부 화이팅~<a
+                href="#"
+                class="post-act-more ml5"
+                >...더 보기</a
+              >
+            </p>
+            <a href="#" class="post-act-more">댓글 24개 모두 보기</a>
+            <p class="post-act-time">1시간 전</p>
+          </div>
+        </div>
+        <div class="post-com flex-vertical">
+          <div class="smile-icon"></div>
+          <form class="comment-form flex-vertical">
+            <input
+              class="comment-input"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+            <button type="submit" class="comment-btn" disabled>게시</button>
+          </form>
         </div>
       </section>
     </main>
-
     <!-- //main -->
   </body>
 </html>
