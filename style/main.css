@@ -30,12 +30,14 @@ body {
   overflow: hidden;
 }
 
-.search-content {
+.search-container {
   position: relative;
   padding-left: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.search-content img {
+.search-container img {
   position: relative;
   top: 2px;
   width: 15px;
@@ -44,7 +46,7 @@ body {
   opacity: 60%;
 }
 
-.search-content input {
+.search-container input {
   border: none;
   background-color: #efeeef;
   outline: none;
@@ -84,14 +86,14 @@ body {
   top: 70px;
 }
 
-.flex-vertical {
+.vertical-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 /* main */
-.post {
+.feed {
   width: 472px;
   background-color: #fff;
   border-radius: 8px;
@@ -100,13 +102,13 @@ body {
   margin-bottom: 12px;
 }
 
-/* post user id section */
+/* feed id container */
 .bold {
   font-weight: bold;
   font-size: 14px;
 }
 
-.post-id {
+.feed-id {
   height: 55px;
   background-color: #fff;
   padding: 0 15px;
@@ -120,36 +122,36 @@ body {
   margin-right: 10px;
 }
 
-.post-id-more {
+.feed-id-more {
   width: 20px;
   height: 20px;
 }
 
-/* post content picture section */
-.post-cont {
+/* feed img container */
+.feed-img-container {
   background-color: #fff;
 }
 
-.post-img {
+.feed-img {
   width: 480px;
   overflow: hidden;
 }
 
-.post-img > img {
+.feed-img > img {
   height: 480px;
 }
 
-.post-img-tools {
+.feed-img-menu {
   background-color: #fff;
   padding: 5px 10px;
 }
 
-.img-tools-group li img {
+.img-menu-group li img {
   margin-right: 16px;
 }
 
-/* post activity & social section */
-.post-act {
+/* feed content container */
+.feed-cont {
   background-color: #fff;
   padding: 0 10px;
   font-size: 14px;
@@ -163,18 +165,18 @@ body {
   margin-left: 5px;
 }
 
-.post-act-more {
+.feed-cont-more {
   font-size: 14px;
   color: #8e8e8e;
 }
 
-.post-act-time {
+.feed-cont-time {
   font-size: 10px;
   color: #8e8e8e;
 }
 
-/* post comment section */
-.post-com {
+/* feed comment container */
+.feed-com {
   height: 35px;
   padding: 8px;
   background-color: #fff;
@@ -182,7 +184,7 @@ body {
   background-color: #fff;
 }
 
-.comment-form {
+.feed-com-form {
   flex-basis: 95%;
 }
 
