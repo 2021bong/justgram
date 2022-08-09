@@ -16,5 +16,5 @@ app.get('/profiles', profiles);
 const server = http.createServer(app);
 
 server.listen(8000, (req, res) => {
-  console.log({ message: 'server is running PORT 8000' });
+  console.log({ message: 'Listening to requests on port 8000' });
 });
